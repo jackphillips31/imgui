@@ -18,10 +18,22 @@ project "ImGui"
 		"imstb_textedit.h",
 		"imstb_truetype.h",
 		"imgui_demo.cpp",
-        "imgui_tables.cpp",
-        "imgui_impl_opengl3.h",
-        "imgui_impl_opengl3.cpp",
-        "imgui_impl_opengl3_loader.h"
+		"imgui_tables.cpp",
+		"imgui_impl_opengl3.h",
+		"imgui_impl_opengl3.cpp",
+		"imgui_impl_opengl3_loader.h",
+		"imgui_impl_glfw.h",
+		"imgui_impl_glfw.cpp"
+	}
+
+	includedirs
+	{
+		"../GLFW/include"
+	}
+
+	links
+	{
+		"GLFW"
 	}
 
 	filter "system:windows"
