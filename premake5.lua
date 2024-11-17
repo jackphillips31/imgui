@@ -23,8 +23,8 @@ project "ImGui"
 		"imgui_impl_opengl3.h",
 		"imgui_impl_opengl3.cpp",
 		"imgui_impl_opengl3_loader.h",
-		"backends/imgui_impl_win32.h",
-		"backends/imgui_impl_win32.cpp"
+		"imgui_impl_win32.h",
+		"imgui_impl_win32.cpp"
 	}
 
 	includedirs
