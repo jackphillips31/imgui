@@ -23,18 +23,13 @@ project "ImGui"
 		"imgui_impl_opengl3.h",
 		"imgui_impl_opengl3.cpp",
 		"imgui_impl_opengl3_loader.h",
-		"imgui_impl_glfw.h",
-		"imgui_impl_glfw.cpp"
+		"backends/imgui_impl_win32.h",
+		"backends/imgui_impl_win32.cpp"
 	}
 
 	includedirs
 	{
-		"../GLFW/include"
-	}
-
-	links
-	{
-		"GLFW"
+		"%{prj.location}"
 	}
 
 	filter "system:windows"
